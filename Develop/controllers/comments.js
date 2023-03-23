@@ -1,9 +1,9 @@
 const Comments = require('express').Router();
 const { readFromFile, readAndAppend } = require('../utils/fsUtils.js');
-const uuid = require('../helpers/uuid');
+const uuid = require('../utils/uuid');
 
 Comments.get('/', (req, res) => {
-  readFromFile('./db/tips.json').then((data) => res.json(JSON.parse(data)));
+  readFromFile('./db/PLACEHOLDER').then((data) => res.json(JSON.parse(data)));
 });
 
 Comments.post('/', (req, res) => {
