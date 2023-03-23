@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../models');//need to change into the model project paths accordance to name later
-const withAuth = require('../utils/auth');
+// const withAuth = require('../utils/auth');
 
 
 //copied some code from mini project that could be reused and changed
@@ -52,7 +52,8 @@ router.get('/', async (req, res) => {
   });
   
   // Use withAuth middleware to prevent access to route
-  router.get('/profile', withAuth, async (req, res) => {
+  //ADD THE AUTH
+  router.get('/profile', async (req, res) => {
     try {
       // Find the logged in user based on the session ID
       const userData = await User.findByPk(req.session.user_id, {

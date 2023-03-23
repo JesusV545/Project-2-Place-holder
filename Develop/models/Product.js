@@ -8,29 +8,29 @@ class Product extends Model {
 Product.init(
     {
         id: {
-            type: DataType.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
         name: {
-            type: DataType.STRING,
+            type: DataTypes.STRING,
             allowNull: false,
             unique: true,
         },
         price: {
-            type: DataType.FLOAT(5,2),
+            type: DataTypes.FLOAT(5,2),
             allowNull: false,
         },
         imageURL: {
-            type: DataType.STRING,
+            type: DataTypes.STRING,
         },
         category: {
-            type: DataType.STRING,
+            type: DataTypes.STRING,
             allowNull: false,
         },
         nutritionFactsURL: {
-            type: DataType.STRING,
+            type: DataTypes.STRING,
         } 
     },
     {
