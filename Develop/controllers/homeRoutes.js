@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { PLACEHOLDER } = require('../models');//need to change into the model project paths accordance to name later
+const { User } = require('../models');//need to change into the model project paths accordance to name later
 const withAuth = require('../utils/auth');
 
 
