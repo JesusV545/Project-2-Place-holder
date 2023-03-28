@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { PLACEHOLDER } = require('../../models');//need to change names once the models are named later
+const { User } = require('../../models');//need to change names once the models are named later
 
 
 

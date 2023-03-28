@@ -1,7 +1,7 @@
 const sequelize = require('../config/connection');
 const { User, Product } = require('../models');
-
-const userData = require('./userData.json');
+// rename the file userDate to Data to fix line 4 
+const userData = require('./userDate.json');
 const productData = require('./productData.json');
 
 const seedDatabase = async () => {
