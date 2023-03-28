@@ -9,14 +9,16 @@ router.get('/', async (req, res) => {
       // .then(console.log(productData))
         const products = productData.map((product) => product.get({ plain: true }));
         res.render('all', { products });
+        console.log(products);
       });
   
   // route to get one product
-  router.get('/product/:id', async (req, res) => {
+  router.get('/:id', async (req, res) => {
     try{ 
         const productData = await Product.findByPk(req.params.id);
         if(!productData) {
             res.status(404).json({message: 'No products with this id!'});
+            console.log("Problem 1");
             return;
         }
         const product = productData.get({ plain: true });
