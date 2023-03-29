@@ -2,31 +2,31 @@
     {
         "name": "Honeycrisp Apple",
         "price": 1.70,
-        "imageURL": "https://i5.walmartimages.com/asr/fdffb720-8b75-43df-bffe-4ffc4e9369d8_3.d4460fa9146eb9716b5804d61d4b26b9.jpeg",
+        "imageURL": "https://res.cloudinary.com/dxnwbl21t/image/upload/c_scale,w_600/co_rgb:128b15,g_north_east,l_text:lora_55_style_bold:GreenUP,x_025,y_025/v1679617189/GREENUP/honeycrisp_pxb1ox.webp",
         "category": "fruit"
     },
     {
         "name": "Carrot",
         "price": 0.96,
-        "imageURL": "https://i5.walmartimages.com/asr/5920bc6b-1db0-4af3-9f23-dddc46c0095f_1.e20c8ba41055db1ac42dfbc1e08d2fe0.jpeg",
+        "imageURL": "https://res.cloudinary.com/dxnwbl21t/image/upload/c_scale,w_600/co_rgb:128b15,g_north_east,l_text:lora_55_style_bold:GreenUP,x_025,y_025/v1679617271/GREENUP/carrots_n2ooiv.webp",
         "category": "vegetable"
     },
     {
         "name": "Grapes",
         "price": 3.98,
-        "imageURL": "https://i5.walmartimages.com/asr/cb389113-415c-4cc1-bad3-a603f43adb87.f2df582f4826dc8133c2f19cbc54ed5b.jpeg",
+        "imageURL": "https://res.cloudinary.com/dxnwbl21t/image/upload/c_scale,w_600/co_rgb:128b15,g_north_east,l_text:lora_55_style_bold:GreenUP,x_25,y_25/v1679617359/GREENUP/grapes_ouvafd.webp",
         "category": "fruit" 
     },
     {
         "name": "Watermelon Seedless",
         "price": 6.50,
-        "imageURL": "https://i5.walmartimages.com/asr/7eaaef1a-e70d-4ad1-983a-0d32f3207aba_1.25f407d7eea58042f2e714def085de92.jpeg",
+        "imageURL": "https://res.cloudinary.com/dxnwbl21t/image/upload/c_scale,w_600/co_rgb:128b15,g_north_east,l_text:lora_55_style_bold:GreenUP,x_25,y_25/v1679617398/GREENUP/watermelon_xrpm4v.webp",
         "category": "fruit"
     },
     {
         "name": "Bell Pepper",
         "price": 1.01,
-        "imageURL": "https://i5.walmartimages.com/asr/7be94a8e-9a5d-4f87-842f-5fe4084138ba.c95d36e140f5e0d492ca632b42e4543c.jpeg",
+        "imageURL": "https://res.cloudinary.com/dxnwbl21t/image/upload/c_fill,w_600/co_rgb:1,e_colorize:100,g_north_east,l_text:lora_55_color_green_style_bold:GreenUP,x_25,y_25/v1679617459/GREENUP/bellPepper_plmlyy.webp",
         "category": "vegetable"
     }
 ]
