@@ -1,6 +1,6 @@
 const Comments = require('express').Router();
-const { readFromFile, readAndAppend } = require('../utils/fsUtils.js');
-const uuid = require('../utils/uuid');
+const { readFromFile, readAndAppend } = require('../../utils/fsUtils.js');
+const uuid = require('../../utils/uuid');
 
 Comments.get('/', (req, res) => {
   readFromFile('./db/PLACEHOLDER').then((data) => res.json(JSON.parse(data)));

@@ -1,15 +1,18 @@
 const router = require('express').Router();
 const { Product } = require('../models');
 
-// route to get all dishes
+// route to get all products
 router.get('/', async (req, res) => {
-    const productData = await Product.findAll().catch((err) => { 
-        res.json(err);
-      });
-      // .then(console.log(productData))
-        const products = productData.map((product) => product.get({ plain: true }));
-        res.render('all', { products });
-        console.log(products);
+  try {
+    const productData = await Product.findAll()
+    // .then(console.log(productData))
+      const products = productData.map((product) => product.get({ plain: true }));
+      res.render('all', { products });
+      console.log(products);
+  } catch (error) {
+    res.status(500).json(err);
+  }
+
       });
   
   // route to get one product
@@ -22,9 +25,9 @@ router.get('/', async (req, res) => {
             return;
         }
         const product = productData.get({ plain: true });
-        res.render('product', product);
+        res.render('product', {...product});
       } catch (err) {
-          res.status(500).json(err);
+        res.status(500).json(err);
       };     
   });
 

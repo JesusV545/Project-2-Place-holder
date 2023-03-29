@@ -4,11 +4,13 @@
 {{#each products as |product|}}
 <div class="bg-rose-600 rounded-xl text-center border-4 border-lime-800">
   <div class="bg-black text-center text-rose-600 w-auto h-8">
-    <h1 class="">{{product.id}} {{product.name}}</h1>
+    <a href="/product/{{product.id}}">
+    <h1 class=""> {{product.name}}</h1>
   </div>
 
-  <img class=" w-40 h-40 self-center m-auto" src="{{product.imageURL}}" alt="{{product.category}}">
+  <img class=" w-40 h-40 self-center m-auto" src={{product.imageURL}} alt="{{product.category}}">
   <h3 class="w-full text-xl">Price:{{product.price}}</h3>
+  </a>
 </div>
 {{/each}}
 </main>
