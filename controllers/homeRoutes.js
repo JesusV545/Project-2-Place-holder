@@ -6,7 +6,7 @@ const { User } = require('../models');
 //copied some code from mini project that could be reused and changed
 router.get('/', async (req, res) => {
     try {
-      res.render('homepage')
+      res.render('login')
       // Get all projects and JOIN with user data
       // const userData = await User.findAll({
       //   include: [
