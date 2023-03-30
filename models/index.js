@@ -26,3 +26,4 @@ Comment.belongsTo(User)
 Comment.belongsTo(Product)
 
 module.exports = { User, Product, Carts, Order, Comment };
+//god i hate this
