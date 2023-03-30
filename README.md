@@ -9,7 +9,11 @@ Once the login page has loaded completely, create an account and login. After lo
 are considering purchasing, simply click add to cart and continue browsing until you are ready to complete your order. 
 
 ## At a Glance
-SCREENSHOT PLACEHOLDERS
+
+![2023-03-30 (2)](https://user-images.githubusercontent.com/117941643/228959468-be5db626-5ad2-44c6-8966-f8d9a5915ad1.png)
+![2023-03-30 (1)](https://user-images.githubusercontent.com/117941643/228959504-bc6f7b16-fe1c-418c-b694-e5493f9d6bf0.png)
+
+
 
 ### Consists of
 HTML, Tailwind CSS, Javascript, Node.js, Express, MySql, dotenv
@@ -18,6 +22,7 @@ HTML, Tailwind CSS, Javascript, Node.js, Express, MySql, dotenv
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Links
+https://github.com/JesusV545/GreenUP/tree/dev-main
 
 
 #### Developer's Note
