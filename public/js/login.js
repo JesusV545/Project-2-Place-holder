@@ -4,8 +4,8 @@ const loginFormHandler = async (event) => {
    // Collect values from the login form
     //WILL NEED TO PAIR UP WITH THE HTML LOGIN PAGE
 
-    const email = document.querySelector('#email-login').value.trim();
-    const password = document.querySelector('#password-login').value.trim();
+    const email = document.querySelector('#loginName').value.trim();
+    const password = document.querySelector('#loginPassword').value.trim();
   
     if (email && password) {
       console.log(email, password);
@@ -25,7 +25,7 @@ const loginFormHandler = async (event) => {
     }
   };
   
-  const signupFormHandler = async (event) => {
+  const signupFormChange = async (event) => {
     event.preventDefault();
   
     // const name = document.querySelector('#name-signup').value.trim();
@@ -40,12 +40,14 @@ const loginFormHandler = async (event) => {
     //   });
   
     //   if (response.ok) {
-        document.location.replace('/createAccount');
+        document.location.replace('signUp');
     //   } else {
     //     alert(response.statusText);
     //   }
     // }
   };
+
+
 
   //REMEMBER TO CHECK AND CHANGE THE QUERY SELECTORS WITH PROPER CLASSES OR IDS IN RESPECTIVE HTML
   
@@ -54,6 +56,17 @@ const loginFormHandler = async (event) => {
   .addEventListener('click', loginFormHandler);
   
   document
-  .getElementById('signUp')
-  .addEventListener('click', signupFormHandler);
+  .getElementById('signup')
+  .addEventListener('click', signupFormChange);
+
+  document
+  .querySelector('#reg-btn')
+  .addEventListener('click', signupFormChange);
+
+  
+
+
+  // document
+  // .getElementById('login')
+  // .addEventListener('click', document.location.replace('login'));
   
