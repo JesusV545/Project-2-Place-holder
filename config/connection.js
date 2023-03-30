@@ -11,8 +11,12 @@ if (process.env.JAWSDB_URL) {
     process.env.DB_NAME,
     process.env.DB_USER,
     process.env.DB_PASS,
+    //  DB_NAME = 'greens_db',
+    //  DB_USER = 'root',
+    //  DB_PASSWORD = 'Assaultx21!',
     {
-      host: 'localhost',
+      host: '127.0.0.1',
+      // host: 'localhost',
       dialect: 'mysql',
       port: 3306
     }
