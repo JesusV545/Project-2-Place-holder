@@ -2,19 +2,19 @@
     {
         "name": "Honeycrisp Apple",
         "price": 1.70,
-        "imageURL": "https://res.cloudinary.com/dxnwbl21t/image/upload/c_scale,w_600/co_rgb:128b15,g_north_east,l_text:lora_55_style_bold:GreenUP,x_025,y_025/v1679617189/GREENUP/honeycrisp_pxb1ox.webp",
+        "imageURL": "https://res.cloudinary.com/dxnwbl21t/image/upload/c_scale,h_288,w_195/co_rgb:128b15,g_north_east,l_text:lora_15_style_bold:GreenUP,x_5,y_5/v1679617189/GREENUP/Products/honeycrisp_pxb1ox.webp",
         "category": "fruit"
     },
     {
         "name": "Carrot",
         "price": 0.96,
-        "imageURL": "https://res.cloudinary.com/dxnwbl21t/image/upload/c_scale,w_600/co_rgb:128b15,g_north_east,l_text:lora_55_style_bold:GreenUP,x_025,y_025/v1679617271/GREENUP/carrots_n2ooiv.webp",
+        "imageURL": "https://res.cloudinary.com/dxnwbl21t/image/upload/c_scale,h_288,w_194/co_rgb:128b15,g_north_east,l_text:lora_15_style_bold:GreenUP,x_25,y_25/v1679617271/GREENUP/Products/carrots_n2ooiv.webp",
         "category": "vegetable"
     },
     {
         "name": "Grapes",
         "price": 3.98,
-        "imageURL": "https://res.cloudinary.com/dxnwbl21t/image/upload/c_scale,w_600/co_rgb:128b15,g_north_east,l_text:lora_55_style_bold:GreenUP,x_25,y_25/v1679617359/GREENUP/grapes_ouvafd.webp",
+        "imageURL": "https://res.cloudinary.com/dxnwbl21t/image/upload/c_scale,h_288,w_194/co_rgb:128b15,g_north_east,l_text:lora_25_style_bold:GreenUP,x_5,y_5/v1679617359/GREENUP/Products/grapes_ouvafd.webp",
         "category": "fruit" 
     },
     {
