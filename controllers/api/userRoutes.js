@@ -11,14 +11,14 @@ router.post('/', async (req, res) => {
       email: req.body.email,
       password: req.body.password
     });
-    // req.session.save(() => {
-    //   req.session.user_id = userData.id;
-    //   req.session.logged_in = true;
+    req.session.save(() => {
+      req.session.user_id = newUser.id;
+      req.session.logged_in = true;
 
       res.status(200).json(newUser);
       return;
-      
-  } catch (err) {
+      }
+  )} catch (err) {
     res.status(400).json(err);
   }
 });
@@ -43,12 +43,12 @@ router.post('/login', async (req, res) => {
       return;
     }
 
-    // req.session.save(() => {
-    //   req.session.user_id = userData.id;
-    //   req.session.logged_in = true;
+    req.session.save(() => {
+      req.session.user_id = userData.id;
+      req.session.logged_in = true;
       
       res.json({ user: userData, message: 'You are now logged in!' });
-    // });
+    });
 
   } catch (err) {
     res.status(400).json(err);
