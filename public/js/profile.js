@@ -2,23 +2,24 @@ const newFormHandler = async (event) => {
     event.preventDefault();
     
     //NEED TO MAKE CHANGES TO LINKS  OF IDS OR CLASS WITH HTML
-    const name = document.querySelector('#project-name').value.trim();
-    const needed_funding = document.querySelector('#project-funding').value.trim();
-    const description = document.querySelector('#project-desc').value.trim();
+    const name = document.querySelector('#name1').value.trim();
+    const email = document.querySelector('#email1').value.trim();
+    const password = document.querySelector('#password1').value.trim();
+    // const description = document.querySelector('#project-desc').value.trim();
   
-    if (name && needed_funding && description) {
-      const response = await fetch(`/api/projects`, {
+    if (name && email && password) {
+      const response = await fetch(`/api/users`, {
         method: 'POST',
-        body: JSON.stringify({ name, needed_funding, description }),
+        body: JSON.stringify({ name, email, password }),
         headers: {
           'Content-Type': 'application/json',
-        },
+        }
       });
   
       if (response.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/product');
       } else {
-        alert('Failed to create project');
+        alert('Route failed');
       }
     }
   };
@@ -40,9 +41,13 @@ const newFormHandler = async (event) => {
   };
   
   document
-    .querySelector('.new-project-form')
-    .addEventListener('submit', newFormHandler);
+    .querySelector('#signup-btn')
+    .addEventListener('click', newFormHandler);
+
+    // document
+    // .querySelector('#reg-btn')
+    // .addEventListener('click', newFormHandler);
   
-  document
-    .querySelector('.project-list')
-    .addEventListener('click', delButtonHandler);
+  // document
+  //   .querySelector('.project-list')
+  //   .addEventListener('click', delButtonHandler);
