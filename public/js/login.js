@@ -27,26 +27,15 @@ const loginFormHandler = async (event) => {
   
   const signupFormChange = async (event) => {
     event.preventDefault();
-  
-    // const name = document.querySelector('#name-signup').value.trim();
-    // const email = document.querySelector('#email-signup').value.trim();
-    // const password = document.querySelector('#password-signup').value.trim();
-  
-    // if (name && email && password) {
-    //   const response = await fetch('/api/users', {
-    //     method: 'POST',
-    //     body: JSON.stringify({ name, email, password }),
-    //     headers: { 'Content-Type': 'application/json' },
-    //   });
-  
-    //   if (response.ok) {
-        document.location.replace('signUp');
-    //   } else {
-    //     alert(response.statusText);
-    //   }
-    // }
+      document.location.replace('signUp');
   };
 
+
+  const cartPageChange = async (event) => {
+      event.preventDefault();
+        document.location.replace('cart');
+    
+    };
 
 
   //REMEMBER TO CHECK AND CHANGE THE QUERY SELECTORS WITH PROPER CLASSES OR IDS IN RESPECTIVE HTML
@@ -63,7 +52,11 @@ const loginFormHandler = async (event) => {
   .querySelector('#reg-btn')
   .addEventListener('click', signupFormChange);
 
-  
+  document
+  .querySelector('#cart-btn')
+  .addEventListener('click', cartPageChange);
+
+
 
 
   // document

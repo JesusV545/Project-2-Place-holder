@@ -21,6 +21,16 @@ router.get('/', async (req, res) => {
       res.status(500).json(err);
     }
   })
+
+  router.get('/cart', async (req, res) => {
+    try {
+      console.log('it works!');
+      res.render('cart');
+    } catch (err) {
+      res.status(400).json(err);
+      alert('something is wrong');
+    }
+  })
   
   // router.get('/user/:id', async (req, res) => {
   //   try {
