@@ -32,8 +32,9 @@ router.get('/', async (req, res) => {
     }
   })
 
-  router.get('/aboutUs', async (req, res) =>{
+  router.get('/aboutUs', async (req, res) => {
     try {
+      console.log('it works!');
       res.render('aboutUs');
     } catch (err) {
       res.status(400).json(err);

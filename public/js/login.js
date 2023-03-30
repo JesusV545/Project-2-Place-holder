@@ -37,6 +37,13 @@ const loginFormHandler = async (event) => {
     
     };
 
+    const aboutUsPage = async (event) => {
+      event.preventDefault();
+        document.location.replace('aboutUs');
+    
+    };
+
+
 
   //REMEMBER TO CHECK AND CHANGE THE QUERY SELECTORS WITH PROPER CLASSES OR IDS IN RESPECTIVE HTML
   
@@ -55,6 +62,10 @@ const loginFormHandler = async (event) => {
   document
   .querySelector('#cart-btn')
   .addEventListener('click', cartPageChange);
+
+  document
+  .querySelector('#about-us')
+  .addEventListener('click', aboutUsPage);
 
 
 
