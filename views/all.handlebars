@@ -1,0 +1,47 @@
+<main class="flex bg-lime-300 h-screen grid grid-rows-3 grid-cols-4 gap-4">
+    <div class="bg-rose-600 rounded-xl text-center border-4 border-lime-800 row-span-3">
+    </div>
+{{#each products as |product|}}
+<section class="product-cards">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="container">
+<div class="col-xs-12 col-md-6 shadow p-3 mb-5 bg-white rounded bootstrap snippets bootdeys">
+  
+  <!-- product -->
+  <div class="product-content product-wrap clearfix">
+    <div class="row">
+        <div class="col-md-5 col-sm-12 col-xs-12">
+          <div class="product-image"> 
+            <img src={{imageURL}} alt="194x228" class="img-responsive"> 
+          </div>
+        </div>
+        <div class="col-md-7 col-sm-12 col-xs-12">
+        <div class="product-deatil">
+            <h3 class="name">
+              <a href="./product/{{product.id}}">
+                               <p>{{name}}</p>
+                {{!-- <span>{{category}}</span> --}}
+              </a>
+            </h5>
+            <p class="price-container">
+              <span>Price: ${{price}}</span>
+            </p>
+            <span class="tag1"></span> 
+        </div>
+        
+        <div class="product-info smart-form">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6"> 
+              <a href="javascript:void(0);" class="btn btn-success">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{/each}}
+</main>
+
+<script src="/js/login.js"></script>
