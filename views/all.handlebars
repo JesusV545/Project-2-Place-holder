@@ -18,14 +18,14 @@
         </div>
         <div class="col-md-7 col-sm-12 col-xs-12">
         <div class="product-deatil">
-            <h5 class="name">
+            <h3 class="name">
               <a href="./product/{{product.id}}">
                                <p>{{name}}</p>
-                <span>{{category}}</span>
+                {{!-- <span>{{category}}</span> --}}
               </a>
             </h5>
             <p class="price-container">
-              <span>{{price}}</span>
+              <span>Price: ${{price}}</span>
             </p>
             <span class="tag1"></span> 
         </div>
@@ -44,5 +44,4 @@
 {{/each}}
 </main>
 
-<script src="/js/add-dish.js"></script>
-
+<script src="/js/login.js"></script>
